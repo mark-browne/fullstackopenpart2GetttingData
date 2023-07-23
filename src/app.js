@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import Form from './form'
 import Filter from './filter'
+import phoneBook from './services/phoneBook';
 
 const App = () => {
   const [persons, setPersons] = useState([
@@ -14,10 +15,8 @@ const App = () => {
 
   useEffect(() => {
     console.log('effect')
-    axios
-      .get('http://localhost:3001/persons')
+    phoneBook.getAll()
       .then(response => {
-        console.log('promise fulfilled')
         setPersons(response.data)
       })
   }, [])
@@ -33,6 +32,7 @@ const App = () => {
       alert(`${newName} already in list`)
     }else{
       setPersons([...persons,{"name":newName ,"number":newNumber}])
+      phoneBook.updateBackend({"name":newName ,"number":newNumber})
     }
     
     event.preventDefault()
