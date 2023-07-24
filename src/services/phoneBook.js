@@ -18,6 +18,6 @@ const updateBackend = (person) =>{
 
 
 export default {
-   getAll : getAll,
-   updateBackend: updateBackend
+   getAll,
+   updateBackend
 }

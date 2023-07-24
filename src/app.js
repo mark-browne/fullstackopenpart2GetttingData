@@ -60,10 +60,10 @@ const App = () => {
       <Form addPerson={addPerson} newName={newName} newNumber={newNumber} handleNameChange={handleNameChange} handleNumberChange={handleNumberChange}/>
       <h2>Numbers</h2>
       <ul>
-        {persons.map((person,i) => <li key={i}>{person.name + " " + person.number}</li>)}
+        {persons.map((person,i) => <li key={i}>{person.name + " " + person.number} <button type="submit" >delete</button>  </li>)}
      </ul>
       <ul>
-        {filteredPersons.map((person,i) => <li key={i}>{person.name + " " + person.number}</li>)}
+        {filteredPersons.map((person,i) => <li key={i}>{person.name + " " + person.number} </li>)}
       </ul>  
      </div>
   )
