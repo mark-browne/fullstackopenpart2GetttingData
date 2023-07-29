@@ -53,6 +53,17 @@ const App = () => {
     setFilteredPersons(persons.filter(item => item.name.includes(newFilter)))
   } 
 
+
+  const handleDelete = (id)=> {
+    phoneBook.deleteRecord(id).then(resp =>{
+      phoneBook.getAll()
+      .then(response => {
+        setPersons(response.data)
+      })
+  })
+  } 
+
+
   return (
     <div>
       <h2>Phonebook</h2>
@@ -60,10 +71,10 @@ const App = () => {
       <Form addPerson={addPerson} newName={newName} newNumber={newNumber} handleNameChange={handleNameChange} handleNumberChange={handleNumberChange}/>
       <h2>Numbers</h2>
       <ul>
-        {persons.map((person,i) => <li key={i}>{person.name + " " + person.number} <button type="submit" >delete</button>  </li>)}
+        {persons.map((person) => <li key={person.id}>{person.name + " " + person.number} <button onClick={() => handleDelete(person.id)} >delete</button>  </li>)}
      </ul>
       <ul>
-        {filteredPersons.map((person,i) => <li key={i}>{person.name + " " + person.number} </li>)}
+        {filteredPersons.map((person) => <li key={person.id}>{person.name + " " + person.number} </li>)}
       </ul>  
      </div>
   )

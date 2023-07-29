@@ -1,89 +1,9 @@
 {
   "persons": [
     {
-      "name": "Arto Hellas",
-      "number": "040-123456",
-      "id": 1
-    },
-    {
-      "name": "Ada Lovelace",
-      "number": "39-44-5323523",
+      "name": "aa",
+      "number": "ddd",
       "id": 2
-    },
-    {
-      "name": "Dan Abramov",
-      "number": "12-43-234345",
-      "id": 3
-    },
-    {
-      "name": "Mary Poppendieck",
-      "number": "39-23-6423122",
-      "id": 4
-    },
-    {
-      "name": "Gee Bagger",
-      "number": "040-123456",
-      "id": 222
-    },
-    {
-      "name": "hole",
-      "number": "face",
-      "id": 223
-    },
-    {
-      "name": "balls",
-      "number": "face",
-      "id": 224
-    },
-    {
-      "name": "kek",
-      "number": "w",
-      "id": 225
-    },
-    {
-      "name": "llll",
-      "number": "qqqq",
-      "id": 226
-    },
-    {
-      "name": "s",
-      "number": "dd",
-      "id": 227
-    },
-    {
-      "name": "d",
-      "number": "ff",
-      "id": 228
-    },
-    {
-      "name": "gg",
-      "number": "gg",
-      "id": 229
-    },
-    {
-      "name": "jjj",
-      "number": "kkk",
-      "id": 230
-    },
-    {
-      "name": "gggg",
-      "number": "hhhh",
-      "id": 231
-    },
-    {
-      "name": "agggg",
-      "number": "lllkkk",
-      "id": 232
-    },
-    {
-      "name": "Gees Bagger",
-      "number": "040-98877373",
-      "id": 444
-    },
-    {
-      "name": "qqqq",
-      "number": "222333",
-      "id": 445
     }
   ]
 }

@@ -4,7 +4,6 @@ const getAll = () => {
    return axios.get('http://localhost:3001/persons')
 }
 
-
 const updateBackend = (person) =>{
    axios
    .post('http://localhost:3001/persons',person)
@@ -16,8 +15,12 @@ const updateBackend = (person) =>{
    })
  }
 
+ const deleteRecord = (id) =>{
+  return axios.delete('http://localhost:3001/persons/'+id)
+}
 
 export default {
    getAll,
-   updateBackend
+   updateBackend,
+   deleteRecord
 }
